@@ -1,0 +1,32 @@
+body{
+    @include light;
+    color: $text-color;
+}
+.button-o{
+    text-decoration: none;
+    border: 2px solid $primary;
+    padding: 17px 22px;
+    font-size: 12px;
+    @include bold;
+    text-transform: uppercase;
+    color: $primary;
+    background-color: #ffffff;
+}
+.button{
+    padding: 25px 45px;
+    text-transform: uppercase;
+    border: none;
+    background-color: $primary;
+    color: #ffffff;
+    @include bold;
+}
+.red{
+    padding-left: 6px;
+    padding-right: 3px;
+    background-color: rgb(228, 24, 31);
+}
+.blue{
+    padding-left: 3px;
+    padding-right: 6px;
+    background-color: rgb(54, 45, 134);
+}
