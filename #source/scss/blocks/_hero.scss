@@ -1,6 +1,6 @@
 .hero{
-    background: #f1f1f1 url("../../../img/mers.png") no-repeat center top 120px;
-    background-size: cover 40%;
+    background: #f1f1f1 url("../../../img/mers1.png") no-repeat center top 80px;
+    background-size: contain;
     padding-top: 180px;
     padding-bottom: 270px;
     &__title{
@@ -12,5 +12,23 @@
         margin-bottom: 67px;
         font-size: 30px;
         @include bold;
+    }
+}
+@media (max-width: 1199px){
+    .hero{
+        background-position-y: 145px;
+        background-size: 80%;
+    }
+}
+@media (max-width: 991px){
+    .hero{
+        background-position-y: 230px;
+        background-size: 80%;
+    }
+}
+@media (max-width: 768px){
+    .hero{
+        background: none;
+        background-color: #f1f1f1;
     }
 }

@@ -8,7 +8,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
     }
     &__mobile, &__landline{
         text-align: right;
@@ -37,9 +36,11 @@
     padding: 16px 0;
     background-color: $primary;
     transition: 0.3s;
-    transform: translateY(-100%);
+    transform: translateY(-200%);
+    opacity: 0;
     &_active{
         transform: translateY(0);
+        opacity: 1;
     }
     &__nav{
         display: flex;
@@ -87,4 +88,36 @@
         color: $text-color-light;
         font-size: 14px;
     }
+}
+@media (max-width: 991px){
+    .navbar{
+        &__mobile, &__landline{
+            display: none;
+        }
+    }
+}
+@media (max-width: 768px){
+    .menu{
+        top: 60px;
+        height: 100%;
+        transition: 0.5s;
+
+        &-button{
+            height: 60px;
+        }
+        &__nav{
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: left;
+        }
+        &__link{
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 576px){
+    .logo {
+        display: none;
+    }
+    
 }

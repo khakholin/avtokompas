@@ -4,6 +4,6 @@ function showMenu() {
         menu.className = 'menu menu_active';
     }
     else{
-        menu.className = 'menu';
+        menu.className = 'menu'
     }
 }

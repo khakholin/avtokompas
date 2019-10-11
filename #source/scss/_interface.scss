@@ -11,7 +11,7 @@ body{
     @include bold;
     text-transform: uppercase;
     color: $primary;
-    background-color: #ffffff;
+    background-color: transparent;
 }
 .button{
     padding: 25px 45px;
@@ -47,4 +47,9 @@ body{
     padding-left: 3px;
     padding-right: 6px;
     background-color: rgb(54, 45, 134);
+}
+@media (max-width: 576px){
+    .button-o{
+        font-size: 10px;
+    }
 }
