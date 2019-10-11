@@ -103,6 +103,7 @@ address {
 body {
   font-family: 'Proxima Nova Light', sans-serif;
   color: #262626;
+  height: 2000px;
 }
 
 .button-o {
@@ -123,6 +124,30 @@ body {
   background-color: #507fe1;
   color: #ffffff;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.button-up {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #507fe1;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  color: #507fe1;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
 .red {
