@@ -3,6 +3,9 @@ body{
     color: $text-color;
     height: 2000px;
 }
+img{
+    max-width:100%
+}
 .section{
     padding: 100px 0;
     &-title{
@@ -26,12 +29,25 @@ body{
     background-color: transparent;
 }
 .button{
+    text-decoration: none;
     padding: 25px 45px;
     text-transform: uppercase;
     border: none;
     background-color: $primary;
     color: #ffffff;
     @include bold;
+    &-fitting{
+        color: $primary;
+        background-color: #ffffff;
+    }
+    &-add{
+        color: #ffffff;
+        background-color: lighten($primary, 10%);
+    }
+    &-like{
+        color: #ffffff;
+        background-color: $primary;
+    }
 }
 /*
 .button-up{
