@@ -3,6 +3,18 @@ body{
     color: $text-color;
     height: 2000px;
 }
+.section{
+    padding: 100px 0;
+    &-title{
+        font-size: 30px;
+        @include bold;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__title{
+        margin-bottom: 100px;
+    }
+}
 .button-o{
     text-decoration: none;
     border: 2px solid $primary;
@@ -81,5 +93,11 @@ body{
 @media (max-width: 576px){
     .button-o{
         font-size: 10px;
+    }
+    .section{
+        padding: 60px;
+        &-title{
+            font-size: 24px;
+        }
     }
 }
