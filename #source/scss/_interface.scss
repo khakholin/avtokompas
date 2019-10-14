@@ -36,6 +36,9 @@ img{
     background-color: $primary;
     color: #ffffff;
     @include bold;
+    &:hover{
+        cursor: pointer;
+    }
     &-fitting{
         color: $primary;
         background-color: #ffffff;
@@ -107,8 +110,12 @@ img{
     }
 }
 @media (max-width: 576px){
-    .button-o{
+    .button{
+        padding: 13px 23px;
         font-size: 10px;
+        .button-o{
+            font-size: 10px;
+        }
     }
     .section{
         padding: 60px;

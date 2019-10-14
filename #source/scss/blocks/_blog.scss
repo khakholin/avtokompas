@@ -48,3 +48,28 @@
         }
     }
 }
+@media (max-width: 505px){
+    .blog{
+        &__heading{
+            text-align: center;
+            flex-direction: column;
+        }
+        &__title{
+            margin-bottom: 20px;
+        }
+        &-list{
+            &__image{
+                height: 150px;
+            }
+        }
+    }
+}
+@media (max-width: 419px){
+    .blog{
+        &-list{
+            &__image{
+                height: 100px;
+            }
+        }
+    }
+}
