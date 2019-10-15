@@ -13,7 +13,7 @@
         background-color: rgba(#7e7b78, 0.9);
         display: block;
         position: absolute;
-        top: 28%;
+        top: 24%;
         right: -55%;
     }
     &:last-child:before{
@@ -31,6 +31,14 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+        }
+    }
+}
+@media (max-width: 1199px){
+    .step{
+        &:before{
+            width: 56%;
+            right: -28%;
         }
     }
 }
