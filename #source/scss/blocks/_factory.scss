@@ -1,6 +1,35 @@
 .factory{
     &-block{
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+        &__text{
+            flex-basis: 50%;
+            margin-left: 70px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            p{
+                margin-bottom: 20px;
+                text-align: justify;
+            }
+        }
+    }
+}
+@media (max-width: 991px){
+    .factory{
+        &-block{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__image{
+                margin-bottom: 20px;
+            }
+            &__text{
+               
+                margin-left: 0;
+            }
+        }
     }
 }

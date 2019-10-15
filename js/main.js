@@ -1,6 +1,7 @@
 let menuButton = document.getElementsByClassName('menu-button')[0];
 menuButton.onclick = function() {
     let menu = document.getElementsByClassName('menu')[0];
+
     if (menu.className == 'menu') {
         menu.className = 'menu menu_active';
     }
