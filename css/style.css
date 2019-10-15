@@ -159,11 +159,17 @@ img { max-width: 100%; }
 
 .offer { padding: 129px 0; }
 
-.offer__block { background: #ffffff url(../../../img/scania.png) no-repeat center right; background-size: contain; padding: 80px; margin-top: -200px; -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); }
+.offer-block { padding: 80px; -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); }
+
+.offer-block_calc-bg { background: #ffffff url(../../../img/scania1.png) no-repeat center right; background-size: contain; }
+
+.offer-block_price-bg { background: #ffffff url(../../../img/scania2.png) no-repeat center right; background-size: contain; }
+
+.offer__block { margin-top: -200px; }
 
 .offer__title { font-size: 25px; text-transform: uppercase; font-family: 'Proxima Nova Semibold', sans-serif; margin-bottom: 20px; }
 
-.offer__subtitle { display: block; font-size: 21px; margin-bottom: 48px; }
+.offer__subtitle { display: block; font-size: 21px; margin-bottom: 48px; max-width: 85%; }
 
 .form__row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; max-width: 900px; margin-bottom: 25px; }
 
@@ -177,17 +183,25 @@ img { max-width: 100%; }
 
 .form__button { height: 80px; width: 100%; }
 
+.form__policy { display: block; margin-left: 45px; text-align: center; }
+
 .border-right-width { border-right-width: 1px; }
 
-@media (max-width: 1199px) { .offer-block { background-position: center right -120px; } }
+@media (max-width: 1199px) { .offer-block { background-position: center right -120px; }
+  .offer-block_price-bg { background: #ffffff url(../../../img/scania3.png) no-repeat center right; }
+  .offer__subtitle { max-width: 90%; }
+  .form__button_price { padding-left: 23px; padding-right: 23px; } }
+
+@media (max-width: 991px) { .offer__subtitle { max-width: 85%; } }
 
 @media (max-width: 768px) { .offer-block { background: none; background-color: #ffffff; padding: 40px; }
   .offer__title { font-size: 20px; }
-  .offer__subtitle { font-size: 16px; }
+  .offer__subtitle { font-size: 16px; max-width: 80%; }
   .form__row { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
   .form__row-checkbox { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
   .form__group { -ms-flex-preferred-size: 100%; flex-basis: 100%; width: 100%; }
-  .form__input { margin-bottom: 20px; border-right-width: 1px; } }
+  .form__input { margin-bottom: 20px; border-right-width: 1px; }
+  .form__policy { margin-left: 0; margin-top: 30px; } }
 
 @media (max-width: 480px) { .form__row-checkbox { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
   .form__checkbox { margin-bottom: 20px; } }
@@ -300,4 +314,18 @@ img { max-width: 100%; }
   .step:before { display: none; } }
 
 @media (max-width: 768px) { .step { width: 100%; } }
+
+.reviews { background-color: #f1f1f1; }
+
+.reviews-slider { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.reviews-slider__item { text-align: center; }
+
+.reviews-slider__image { display: block; width: 70px; height: 70px; border: 2px solid #6a99e9; border-radius: 50%; margin: 20px auto; }
+
+.reviews-slider__text { position: relative; font-style: italic; font-size: 15px; max-width: 370px; padding: 20px; background-color: #ffffff; border-radius: 10px; margin-bottom: 30px; }
+
+.reviews-slider__text:after { content: ''; position: absolute; bottom: -40px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); height: 10px; border: 30px solid transparent; border-top: 30px solid #ffffff; }
+
+.factory-block { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 /*# sourceMappingURL=style.css.map */
