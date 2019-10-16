@@ -134,7 +134,7 @@ img { max-width: 100%; }
 
 .select { height: 80px; border: 1px solid #dddddd; position: relative; }
 
-.select:after { content: ''; position: absolute; z-index: 10; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); right: 20px; width: 20px; height: 20px; background: url(/img/chevron-down.png) no-repeat center; background-size: 100%; }
+.select:after { content: ''; position: absolute; z-index: 10; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); right: 20px; width: 20px; height: 20px; background: url(/img/offer/chevron-down.png) no-repeat center; background-size: 100%; }
 
 .select:hover { cursor: pointer; }
 
@@ -212,7 +212,7 @@ img { max-width: 100%; }
 
 @media (max-width: 576px) { .logo { display: none; } }
 
-.hero { background: #f1f1f1 url("/img/mers.png") no-repeat center top 80px; background-size: contain; padding-top: 180px; padding-bottom: 270px; }
+.hero { background: #f1f1f1 url("/img/hero/mers.png") no-repeat center top 80px; background-size: contain; padding-top: 180px; padding-bottom: 270px; }
 
 .hero__title { font-size: 30px; margin-bottom: 40px; }
 
@@ -228,9 +228,9 @@ img { max-width: 100%; }
 
 .offer-block { padding: 80px; -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); }
 
-.offer-block_calc-bg { background: #ffffff url(/img/scania1.png) no-repeat center right; background-size: contain; }
+.offer-block_calc-bg { background: #ffffff url(/img/offer/scania1.png) no-repeat center right; background-size: contain; }
 
-.offer-block_price-bg { background: #ffffff url(/img/scania2.png) no-repeat center right; background-size: contain; }
+.offer-block_price-bg { background: #ffffff url(/img/offer/scania2.png) no-repeat center right; background-size: contain; }
 
 .offer__block { margin-top: -200px; }
 
@@ -257,7 +257,7 @@ img { max-width: 100%; }
 .border-right-width { border-right-width: 1px; }
 
 @media (max-width: 1199px) { .offer-block { background-position: center right -120px; }
-  .offer-block_price-bg { background: #ffffff url(/img/scania3.png) no-repeat center right; }
+  .offer-block_price-bg { background: #ffffff url(/img/offer/scania3.png) no-repeat center right; }
   .offer__subtitle { max-width: 90%; }
   .form__button_price { padding-left: 23px; padding-right: 23px; } }
 
