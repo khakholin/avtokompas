@@ -25,9 +25,12 @@
                 <div class="container">
                     <div class="navbar-wrap">
                         <button class="menu-button navbar__menu-button">
+                            <div class="menu-button__lines"></div>
+                            <!--
                             <span class="menu-button__line"></span>
                             <span class="menu-button__line"></span>
                             <span class="menu-button__line"></span>
+                            -->
                         </button>
                         <div class="logo navbar__logo">
                             <strong class="logo__text">
@@ -43,7 +46,7 @@
                             <a href="tel:+73833637955" class="navbar__phone">+7 (383) 363 79 55</a>
                             <a href="mailto:novosib@a-kompas.ru" class="navbar__email navbar__small-text">novosib@a-kompas.ru</a>
                         </div>
-                        <button class="button-o navbar__button">Получить консультацию</button>
+                        <a href="#offer" class="button-o navbar__button">Получить консультацию</a>
                     </div>
                 </div>
                 <!-- /.container -->
@@ -55,14 +58,14 @@
                         Доставка грузов<br>по&nbsp;России,<br>в&nbsp;страны&nbsp;СНГ и&nbsp;Европу
                     </h1>
                     <span class="hero__subtitle">от 1 000</span>
-                    <button class="button hero__button">Заказать доставку</button>
+                    <a href="#offer" class="button hero__button">Заказать доставку</a>
                 </div>
             </div>
             <!-- /.hero -->
         </header>
         <!-- /.header -->
         <main>
-            <section class="offer bg-secondary">
+            <section class="offer bg-secondary" id="offer">
                 <div class="container">
                     <div class="offer__block offer-block offer-block_calc-bg">
                         <h2 class="offer__title">оставьте заявку</h2>
@@ -73,15 +76,22 @@
                             <div class="form__row">
                                 <div class="form__group">
                                     <label for="" class="form__label">Вид стекла</label>
-                                    <input type="text" class="input form__input">
+                                    <input type="hidden" class="type" id="select-type" value="С печатью">
+                                    <div class="select form__select">
+                                        <div class="select_checked">С печатью</div>
+                                        <ul class="select__dropdown">
+                                            <li class="select__option" data-value="С печатью">С печатью</li>
+                                            <li class="select__option" data-value="Без печати">Без печати</li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="form__group">
                                     <label for="" class="form__label">Ширина, см</label>
-                                    <input type="text" class="input form__input">
+                                    <input type="number" class="input form__input">
                                 </div>
                                 <div class="form__group">
                                     <label for="" class="form__label">Высота, см</label>
-                                    <input type="text" class="input form__input border-right-width">
+                                    <input type="number" class="input form__input border-right-width">
                                 </div>
                             </div>
                             <div class="form__row form__row-checkbox">
@@ -495,7 +505,7 @@
                                     <input type="text" class="input form__input" placeholder="Ваше имя">
                                 </div>
                                 <div class="form__group">
-                                    <input type="text" class="input form__input" placeholder="Ваш телефон">
+                                    <input type="tel" class="input form__input" placeholder="Ваш телефон">
                                 </div>
                                 <div class="form__group">
                                     <input type="text" class="input form__input border-right-width" placeholder="Ваша цена">
@@ -605,25 +615,11 @@
             </div>
         </div>
         <!--<a href="#top" class="button-up">up</a>-->
-        <script src="js/main.js"></script>
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="js/jquery.event.move.js"></script>
         <script src="js/jquery.twentytwenty.js"></script>
         <script src="js/slick.min.js"></script>
-        <script>
-            $(window).load(function(){
-                $(".before-after").twentytwenty({
-                    before_label: 'С Автокомпасом',
-                    after_label: 'Без Автокомпаса'
-                });
-                $('.before-slider').slick({
-                    draggable: false,
-                    dots: true,
-                    dotsClass: 'before-slider__dots',
-                    prevArrow: $('.arrow-left'),
-                    nextArrow: $('.arrow-right'),
-                })
-            })
-        </script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
