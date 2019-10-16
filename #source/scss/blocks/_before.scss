@@ -1,0 +1,48 @@
+.before{
+    &-slider{
+        &-wrap{
+            max-width: 640px;
+            margin: auto;
+            position: relative;
+        }
+        &__dots{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            margin-top: 10px;
+            li{
+                width: 10px;
+                height: 10px;
+                background-color: #d1d1d1;
+                border-radius: 50%;
+                margin: 5px;
+                &:hover{
+                    cursor: pointer;
+                }
+                &.slick-active{
+                    background-color: #5b7fda;
+                }
+            }
+            button{
+                display: none;
+            }
+        }
+    }
+}
+.arrow{
+    background-color: transparent;
+    font-size: 30px;
+    color: $text-color-light;
+    &-left{
+        position: absolute;
+        transform: translateY(-575%);
+        right: 100%;
+    }
+    &-right{
+        position: absolute;
+        left: 100%;
+        transform: translateY(-575%);
+    }
+}
