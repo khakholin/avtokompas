@@ -4,8 +4,8 @@
     left: 0;
     top: 0;
     width: 100%;
-    background-color: #ffffff;
-    border-bottom: 1px solid rgba(#510bba, 0.1);
+    background-color: $dark-brown;
+    border-bottom: 1px solid rgba($primary, 0.1);
     &-wrap{
         display: flex;
         align-items: center;
@@ -20,12 +20,12 @@
         margin-bottom: 5px;
         @include bold;
         text-decoration: none;
-        color: $text-color;
+        color: #ffffff;
     }
     &__small-text{
         display: block;
         font-size: 14px;
-        color: $text-color-light;
+        color: rgba(#ffffff, 0.7);
         text-decoration: none;
     }
 }
@@ -36,7 +36,7 @@
     top: 80px;
     left: 0;
     padding: 16px 0;
-    background-color: $primary;
+    background-color: $light-brown;
     transition: 0.3s;
     transform: translateY(-200%);
     opacity: 0;
@@ -61,8 +61,8 @@
         justify-content: center;
         background-color: transparent;
         border: none;
-        border-right: 1px solid rgba(#510bba, 0.1);
-        border-left: 1px solid rgba(#510bba, 0.1);
+        border-right: 1px solid rgba($primary, 0.1);
+        border-left: 1px solid rgba($primary, 0.1);
         height: 80px;
         width: 80px;
         &:hover{
@@ -75,7 +75,7 @@
             width: 25px;
             height: 20px;
             position: relative;
-            border-bottom: 2px solid $burger;
+            border-bottom: 2px solid $primary;
             box-sizing: border-box;
             cursor: pointer;
             overflow: hidden;
@@ -87,7 +87,7 @@
                 content: "";
                 display: block;
                 height: 2px;
-                background: $burger;
+                background: $primary;
                 transition: all 0.5s;
             }
             &:after{
@@ -98,7 +98,7 @@
                 content: "";
                 display: block;
                 height: 2px;
-                background: $burger;
+                background: $primary;
                 transition: transform 0.5s, width 2s;
             }
             &_active{
@@ -108,7 +108,7 @@
                     display: block;
                     width: 100%;
                     transform: rotate(45deg);
-                    background: $burger;
+                    background: $primary;
                     top: 100%;
                     margin-top: -45%;
                     left: 0;
@@ -119,7 +119,7 @@
                     display: block;
                     width: 100%;
                     transform: rotate(-45deg);
-                    background: $burger;
+                    background: $primary;
                     top: 100%;
                     margin-top: -45%;
                     left: 0;
@@ -141,7 +141,7 @@
     &__description{
         display: block;
         font-size: 14px;
-        color: $text-color-light;
+        color: rgba(#ffffff, 0.7);
         font-size: 14px;
     }
 }

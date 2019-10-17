@@ -1,4 +1,5 @@
-.price{
+.car-park{
+    background-color: $bg-secondary;
     &-block{
         display: flex;
         justify-content: space-between;
@@ -17,10 +18,10 @@
         position: relative;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
         &__text{
-            padding: 20px;
+            padding: 5px;
             font-size: 15px;
             &:hover{
-                .price-card__button{
+                .car-park-card__button{
                     z-index: 99;
                     bottom: -80px;
                     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
@@ -33,7 +34,7 @@
         &__cost{
             @include bold;
         }
-        &__pricetag{
+        &__car-park-tag{
             display: flex;
             justify-content: space-between;
         }
@@ -54,7 +55,7 @@
     }
 }
 @media (max-width: 1199px){
-    .price{
+    .car-park{
         &-block{
             justify-content: center;
             &__card{
@@ -64,7 +65,7 @@
     }
 }
 @media (max-width: 400px){
-    .price{
+    .car-park{
         &-block{
             &__card{
                 margin: 10px;
@@ -77,7 +78,7 @@
             }
             &__text{
                 &:hover{
-                    .price-card__button{
+                    .car-park-card__button{
                         bottom: -60px;
                     }
                 }

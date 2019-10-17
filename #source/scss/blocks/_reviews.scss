@@ -4,6 +4,7 @@
         display: flex;
         justify-content: space-between;
         &__item{
+            flex-basis: 30%;
             text-align: center;
         }
         &__image{
@@ -32,6 +33,21 @@
                 height: 10px;
                 border: 30px solid transparent;
                 border-top: 30px solid #ffffff;
+            }
+        }       
+    }
+}
+@media (max-width: 768px){
+    .reviews{
+        &-slider{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__item{
+                margin-bottom: 60px;
+            }
+            &__text{
+                max-width: 250px;
             }
         }
     }

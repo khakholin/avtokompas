@@ -3,7 +3,7 @@
     <head>
         <title>Автокомпас</title>
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/twentytwenty.css" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
         <meta name="viewport" content="width=device-width">
         <script src="https://kit.fontawesome.com/6010edd914.js" crossorigin="anonymous"></script>
@@ -26,11 +26,6 @@
                     <div class="navbar-wrap">
                         <button class="menu-button navbar__menu-button">
                             <div class="menu-button__lines"></div>
-                            <!--
-                            <span class="menu-button__line"></span>
-                            <span class="menu-button__line"></span>
-                            <span class="menu-button__line"></span>
-                            -->
                         </button>
                         <div class="logo navbar__logo">
                             <strong class="logo__text">
@@ -65,23 +60,23 @@
         </header>
         <!-- /.header -->
         <main>
-            <section class="offer bg-secondary" id="offer">
+            <section class="offer" id="offer">
                 <div class="container">
                     <div class="offer__block offer-block offer-block_calc-bg">
                         <h2 class="offer__title">оставьте заявку</h2>
                         <span class="offer__subtitle">
-                            и получите скидку 30% на изготовление
+                            и получите скидку 5% на доставку
                         </span>
                         <form action="#" class="form offer__form">
                             <div class="form__row">
                                 <div class="form__group">
-                                    <label for="" class="form__label">Вид стекла</label>
-                                    <input type="hidden" class="type" id="select-type" value="С печатью">
+                                    <label for="" class="form__label">Вид груза</label>
+                                    <input type="hidden" class="type" id="select-type" value="Стандартный">
                                     <div class="select form__select">
-                                        <div class="select_checked">С печатью</div>
+                                        <div class="select_checked">Стандартный</div>
                                         <ul class="select__dropdown">
-                                            <li class="select__option" data-value="С печатью">С печатью</li>
-                                            <li class="select__option" data-value="Без печати">Без печати</li>
+                                            <li class="select__option" data-value="Стандартный">Стандартный</li>
+                                            <li class="select__option" data-value="Живой">Живой</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -98,13 +93,13 @@
                                 <div class="form__checkbox">
                                     <input class="checkbox" type="checkbox" id="delivery">
                                     <label class="checkbox-label" for="delivery"> 
-                                        Монтаж
+                                        Негабаритный
                                     </label>
                                 </div>
                                 <div class="form__checkbox">
                                     <input class="checkbox" type="checkbox" id="install">
                                     <label class="checkbox-label" for="install">
-                                        Доставка
+                                        Сверхтяжелый
                                     </label>
                                 </div>
                             </div>
@@ -128,131 +123,154 @@
                     <h2 class="section-title section__title">Наши преимущества</h2>
                     <div class="features-block">
                         <div class="features-block__item">
-                            <img src="img/features/car.png" alt="X" class="features-block__image">
-                            <p class="features-block__text">Lorem ipsum dolor</p>
+                            <i class="fas fa-star features-block__image"></i>
+                            <p class="features-block__text">Высокое качество</p>
                         </div>
                         <div class="features-block__item">
-                            <img src="img/features/car.png" alt="X" class="features-block__image">
-                            <p class="features-block__text">Lorem ipsum dolor</p>
+                            <i class="fas fa-check features-block__image"></i>
+                            <p class="features-block__text">Гарантии</p>
                         </div>
                         <div class="features-block__item">
-                            <img src="img/features/car.png" alt="X" class="features-block__image">
-                            <p class="features-block__text">Lorem ipsum dolor</p>
+                                <i class="fas fa-users features-block__image"></i>
+                            <p class="features-block__text">Индивидуальный подход</p>
                         </div>
                         <div class="features-block__item">
-                            <img src="img/features/car.png" alt="X" class="features-block__image">
-                            <p class="features-block__text">Lorem ipsum dolor</p>
+                                <i class="fas fa-user-tie features-block__image"></i>
+                            <p class="features-block__text">Профессионализм</p>
                         </div>
                         <div class="features-block__item">
-                            <img src="img/features/car.png" alt="X" class="features-block__image">
-                            <p class="features-block__text">Lorem ipsum dolor</p>
+                            <i class="fas fa-question features-block__image"></i>
+                            <p class="features-block__text">Lorem</p>
                         </div>
                         <div class="features-block__item">
-                            <img src="img/features/car.png" alt="X" class="features-block__image">
-                            <p class="features-block__text">Lorem ipsum dolor</p>
+                            <i class="fas fa-question features-block__image"></i>
+                            <p class="features-block__text">Lorem</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section catalog">
+            <section class="section services">
                 <div class="container">
-                    <h2 class="section-title section__title">Каталог скинали</h2>
-                    <div class="catalog-block">
-                        <div class="catalog-card catalog__card">
-                            <img class="catalog-card__image" src="img/catalog/1.jpg" alt="">
-                            <span class="catalog-card__tag">man</span>
-                            <div class="catalog-card__buttons">
-                                <button class="button-fitting catalog-card__button">Примерить онлайн</button>
-                                <button class="button-add catalog-card__button">Заказать</button>
-                                <button class="button-like catalog-card__button">
+                    <h2 class="section-title section__title">Наши услуги</h2>
+                    <div class="services-block">
+                        <div class="services-card services__card">
+                            <img class="services-card__image" src="img/services/1.jpg" alt="">
+                            <span class="services-card__tag">Междугородние перевозки</span>
+                            <div class="services-card__buttons">
+                                <button class="button-fitting services-card__button">Узнать подробнее</button>
+                                <button class="button-add services-card__button">Заказать</button>
+                                <button class="button-like services-card__button">
                                     <i class="far fa-heart"></i>
                                 </button>
                             </div>
                         </div>
-                        <div class="catalog-card catalog__card">
-                            <img class="catalog-card__image" src="img/catalog/2.jpg" alt="">
-                            <span class="catalog-card__tag">scania</span>
-                            <div class="catalog-card__buttons">
-                                <button class="button-fitting catalog-card__button">Примерить онлайн</button>
-                                <button class="button-add catalog-card__button">Заказать</button>
-                                <button class="button-like catalog-card__button">
+                        <div class="services-card services__card">
+                            <img class="services-card__image" src="img/services/2.jpg" alt="">
+                            <span class="services-card__tag">Международные перевозки</span>
+                            <div class="services-card__buttons">
+                                <button class="button-fitting services-card__button">Узнать подробнее</button>
+                                <button class="button-add services-card__button">Заказать</button>
+                                <button class="button-like services-card__button">
                                     <i class="far fa-heart"></i>
                                 </button>
                             </div>
                         </div>
-                        <div class="catalog-card catalog__card">
-                            <img class="catalog-card__image" src="img/catalog/3.jpg" alt="">
-                            <span class="catalog-card__tag">renault</span>
-                            <div class="catalog-card__buttons">
-                                <button class="button-fitting catalog-card__button">Примерить онлайн</button>
-                                <button class="button-add catalog-card__button">Заказать</button>
-                                <button class="button-like catalog-card__button">
+                        <div class="services-card services__card">
+                            <img class="services-card__image" src="img/services/3.jpg" alt="">
+                            <span class="services-card__tag">Перевозки опасных грузов</span>
+                            <div class="services-card__buttons">
+                                <button class="button-fitting services-card__button">Узнать подробнее</button>
+                                <button class="button-add services-card__button">Заказать</button>
+                                <button class="button-like services-card__button">
                                     <i class="far fa-heart"></i>
                                 </button>
                             </div>
                         </div>
-                        <div class="catalog-card catalog__card">
-                            <img class="catalog-card__image" src="img/catalog/4.jpg" alt="">
-                            <span class="catalog-card__tag">nikola</span>
-                            <div class="catalog-card__buttons">
-                                <button class="button-fitting catalog-card__button">Примерить онлайн</button>
-                                <button class="button-add catalog-card__button">Заказать</button>
-                                <button class="button-like catalog-card__button">
+                        <div class="services-card services__card">
+                            <img class="services-card__image" src="img/services/4.jpg" alt="">
+                            <span class="services-card__tag">Организация адресной доставки</span>
+                            <div class="services-card__buttons">
+                                <button class="button-fitting services-card__button">Узнать подробнее</button>
+                                <button class="button-add services-card__button">Заказать</button>
+                                <button class="button-like services-card__button">
                                     <i class="far fa-heart"></i>
                                 </button>
                             </div>
                         </div>
-                        <div class="catalog-card catalog__card">
-                            <img class="catalog-card__image" src="img/catalog/5.jpg" alt="">
-                            <span class="catalog-card__tag">mercedes</span>
-                            <div class="catalog-card__buttons">
-                                <button class="button-fitting catalog-card__button">Примерить онлайн</button>
-                                <button class="button-add catalog-card__button">Заказать</button>
-                                <button class="button-like catalog-card__button">
+                        <div class="services-card services__card">
+                            <img class="services-card__image" src="img/services/5.jpg" alt="">
+                            <span class="services-card__tag">Экспедирование Ваших грузов по городам</span>
+                            <div class="services-card__buttons">
+                                <button class="button-fitting services-card__button">Узнать подробнее</button>
+                                <button class="button-add services-card__button">Заказать</button>
+                                <button class="button-like services-card__button">
                                     <i class="far fa-heart"></i>
                                 </button>
                             </div>
                         </div>
-                        <div class="catalog-card catalog__card">
-                            <img class="catalog-card__image" src="img/catalog/6.jpg" alt="">
-                            <span class="catalog-card__tag">scania</span>
-                            <div class="catalog-card__buttons">
-                                <button class="button-fitting catalog-card__button">Примерить онлайн</button>
-                                <button class="button-add catalog-card__button">Заказать</button>
-                                <button class="button-like catalog-card__button">
+                        <div class="services-card services__card">
+                            <img class="services-card__image" src="img/services/6.jpg" alt="">
+                            <span class="services-card__tag">Перевозки скоропортящихся грузов</span>
+                            <div class="services-card__buttons">
+                                <button class="button-fitting services-card__button">Узнать подробнее</button>
+                                <button class="button-add services-card__button">Заказать</button>
+                                <button class="button-like services-card__button">
                                     <i class="far fa-heart"></i>
                                 </button>
                             </div>
                         </div>
-                        <div class="catalog-card catalog__card">
-                            <img class="catalog-card__image" src="img/catalog/7.jpg" alt="">
-                            <span class="catalog-card__tag">daf</span>
-                            <div class="catalog-card__buttons">
-                                <button class="button-fitting catalog-card__button">Примерить онлайн</button>
-                                <button class="button-add catalog-card__button">Заказать</button>
-                                <button class="button-like catalog-card__button">
+                        <div class="services-card services__card">
+                            <img class="services-card__image" src="img/services/7.jpg" alt="">
+                            <span class="services-card__tag">Комплексные решения по доставке ваших грузов</span>
+                            <div class="services-card__buttons">
+                                <button class="button-fitting services-card__button">Узнать подробнее</button>
+                                <button class="button-add services-card__button">Заказать</button>
+                                <button class="button-like services-card__button">
                                     <i class="far fa-heart"></i>
                                 </button>
                             </div>
                         </div>
-                        <div class="catalog-card catalog__card">
-                            <img class="catalog-card__image" src="img/catalog/8.jpg" alt="">
-                            <span class="catalog-card__tag">trucks</span>
-                            <div class="catalog-card__buttons">
-                                <button class="button-fitting catalog-card__button">Примерить онлайн</button>
-                                <button class="button-add catalog-card__button">Заказать</button>
-                                <button class="button-like catalog-card__button catalog-card__button">
+                        <div class="services-card services__card">
+                            <img class="services-card__image" src="img/services/8.jpg" alt="">
+                            <span class="services-card__tag">Возможно охранное сопровождение</span>
+                            <div class="services-card__buttons">
+                                <button class="button-fitting services-card__button">Узнать подробнее</button>
+                                <button class="button-add services-card__button">Заказать</button>
+                                <button class="button-like services-card__button services-card__button">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="services-card services__card">
+                            <img class="services-card__image" src="img/services/8.jpg" alt="">
+                            <span class="services-card__tag">Услуги трала, площадки и др. спецтехники</span>
+                            <div class="services-card__buttons">
+                                <button class="button-fitting services-card__button">Узнать подробнее</button>
+                                <button class="button-add services-card__button">Заказать</button>
+                                <button class="button-like services-card__button services-card__button">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="services-card services__card">
+                            <img class="services-card__image" src="img/services/8.jpg" alt="">
+                            <span class="services-card__tag">По Вашему желанию груз может быть застрахован</span>
+                            <div class="services-card__buttons">
+                                <button class="button-fitting services-card__button">Узнать подробнее</button>
+                                <button class="button-add services-card__button">Заказать</button>
+                                <button class="button-like services-card__button services-card__button">
                                     <i class="far fa-heart"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div class="catalog__link">
-                        <a href="#" class="button catalog__link-more button_lg">Смотреть весь каталог скинали</a>
-                        <span class="catalog__description">Более 3000 изображений скинали в 25 рубриках</span>
+                    <div class="services__link">
+                        <a href="#" class="button services__link-more button_lg">Смотреть полный список услуг</a>
+                        <span class="services__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
                     </div>
                 </div>
             </section>
+            <!--
             <section class="section blog">
                 <div class="container">
                     <div class="blog__heading">
@@ -294,92 +312,92 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="section price">
+            </section>-->
+            <section class="section car-park">
                 <div class="container">
-                    <h2 class="section-title section__title">Цены и виды скинали</h2>
-                    <div class="price-block">
-                        <div class="price-card price-block__card">
-                            <div class="price-card__image">
-                                <img src="img/price/1.jpg" alt="">
+                    <h2 class="section-title section__title">Наш автопарк</h2>
+                    <div class="car-park-block">
+                        <div class="car-park-card car-park-block__card">
+                            <div class="car-park-card__image">
+                                <img src="img/car-park/1.jpg" alt="">
                             </div>
-                            <div class="price-card__text">
-                                <div class="price-card__pricetag">
-                                    <h4 class="price-card__title">Lorem</h4>
-                                    <span class="price-card__cost">от 1000 р</span>
+                            <div class="car-park-card__text">
+                                <div class="car-park-card__car-park-tag">
+                                    <h4 class="car-park-card__title">Автомобили<br>грузоподъемностью 600 кг</h4>
+                                    <span class="car-park-card__cost">2 куба</span>
                                 </div>
-                                <div class="price-card__button">
-                                    <button class="button">Оставить заявку</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="price-card price-block__card">
-                            <div class="price-card__image">
-                                <img src="img/price/2.jpg" alt="">
-                            </div>
-                            <div class="price-card__text">
-                                <div class="price-card__pricetag">
-                                    <h4 class="price-card__title">Lorem</h4>
-                                    <span class="price-card__cost">от 1000 р</span>
-                                </div>
-                                <div class="price-card__button">
-                                    <button class="button">Оставить заявку</button>
+                                <div class="car-park-card__button">
+                                    <button class="button car-park__button">Подробнее</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="price-card price-block__card">
-                            <div class="price-card__image">
-                                <img src="img/price/3.jpg" alt="">
+                        <div class="car-park-card car-park-block__card">
+                            <div class="car-park-card__image">
+                                <img src="img/car-park/2.jpg" alt="">
                             </div>
-                            <div class="price-card__text">
-                                <div class="price-card__pricetag">
-                                    <h4 class="price-card__title">Lorem</h4>
-                                    <span class="price-card__cost">от 1000 р</span>
+                            <div class="car-park-card__text">
+                                <div class="car-park-card__car-park-tag">
+                                    <h4 class="car-park-card__title">Автомобили<br>грузоподъемностью<br>1,5 тонны</h4>
+                                    <span class="car-park-card__cost">от 8 до 16 кубов</span>
                                 </div>
-                                <div class="price-card__button">
-                                    <button class="button">Оставить заявку</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="price-card price-block__card">
-                            <div class="price-card__image">
-                                <img src="img/price/4.jpg" alt="">
-                            </div>
-                            <div class="price-card__text">
-                                <div class="price-card__pricetag">
-                                    <h4 class="price-card__title">Lorem</h4>
-                                    <span class="price-card__cost">от 1000 р</span>
-                                </div>
-                                <div class="price-card__button">
-                                    <button class="button">Оставить заявку</button>
+                                <div class="car-park-card__button">
+                                    <button class="button">Подробнее</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="price-card price-block__card">
-                            <div class="price-card__image">
-                                <img src="img/price/5.jpg" alt="">
+                        <div class="car-park-card car-park-block__card">
+                            <div class="car-park-card__image">
+                                <img src="img/car-park/3.jpg" alt="">
                             </div>
-                            <div class="price-card__text">
-                                <div class="price-card__pricetag">
-                                    <h4 class="price-card__title">Lorem</h4>
-                                    <span class="price-card__cost">от 1000 р</span>
+                            <div class="car-park-card__text">
+                                <div class="car-park-card__car-park-tag">
+                                    <h4 class="car-park-card__title">Автомобили<br>грузоподъемностью<br>3 тонны</h4>
+                                    <span class="car-park-card__cost">от 16 до 30 кубов</span>
                                 </div>
-                                <div class="price-card__button">
-                                    <button class="button">Оставить заявку</button>
+                                <div class="car-park-card__button">
+                                    <button class="button">Подробнее</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="price-card price-block__card">
-                            <div class="price-card__image">
-                                <img src="img/price/6.jpg" alt="">
+                        <div class="car-park-card car-park-block__card">
+                            <div class="car-park-card__image">
+                                <img src="img/car-park/4.jpg" alt="">
                             </div>
-                            <div class="price-card__text">
-                                <div class="price-card__pricetag">
-                                    <h4 class="price-card__title">Lorem</h4>
-                                    <span class="price-card__cost">от 1000 р</span>
+                            <div class="car-park-card__text">
+                                <div class="car-park-card__car-park-tag">
+                                    <h4 class="car-park-card__title">Автомобили<br>грузоподъемностью<br>5 тонн</h4>
+                                    <span class="car-park-card__cost">от 30 до 45 кубов</span>
                                 </div>
-                                <div class="price-card__button">
-                                    <button class="button">Оставить заявку</button>
+                                <div class="car-park-card__button">
+                                    <button class="button">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-park-card car-park-block__card">
+                            <div class="car-park-card__image">
+                                <img src="img/car-park/5.jpg" alt="">
+                            </div>
+                            <div class="car-park-card__text">
+                                <div class="car-park-card__car-park-tag">
+                                    <h4 class="car-park-card__title">Автомобили<br>грузоподъемностью<br>10 тонн</h4>
+                                    <span class="car-park-card__cost">от 45 до 54 кубов</span>
+                                </div>
+                                <div class="car-park-card__button">
+                                    <button class="button">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-park-card car-park-block__card">
+                            <div class="car-park-card__image">
+                                <img src="img/car-park/6.jpg" alt="">
+                            </div>
+                            <div class="car-park-card__text">
+                                <div class="car-park-card__car-park-tag">
+                                    <h4 class="car-park-card__title">Автомобили<br>грузоподъемностью<br>20 тонн</h4>
+                                    <span class="car-park-card__cost">от 82 до 120 кубов</span>
+                                </div>
+                                <div class="car-park-card__button">
+                                    <button class="button">Подробнее</button>
                                 </div>
                             </div>
                         </div>
@@ -391,43 +409,43 @@
                     <h2 class="section-title section__title">Этапы работ</h2>
                     <div class="steps-block">
                         <div class="step">
-                            <img src="img/steps/1.png" alt="" class="step__image">
-                            <h4 class="step__title">Заявка</h4>
+                            <i class="fas fa-phone-volume step__image"></i>
+                            <h4 class="step__title">Консультация</h4>
                             <p class="step__text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, expedita.
                             </p>
                         </div>
                         <div class="step">
-                            <img src="img/steps/1.png" alt="" class="step__image">
-                            <h4 class="step__title">Замер</h4>
+                            <i class="fas fa-book-open step__image"></i>
+                            <h4 class="step__title">Знакомство с условиями</h4>
                             <p class="step__text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, expedita.
                             </p>
                         </div>
                         <div class="step">
-                            <img src="img/steps/1.png" alt="" class="step__image">
+                            <i class="fas fa-edit step__image"></i>
                             <h4 class="step__title">Договор</h4>
                             <p class="step__text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, expedita.
                             </p>
                         </div>
                         <div class="step">
-                            <img src="img/steps/1.png" alt="" class="step__image">
-                            <h4 class="step__title">Дизайн</h4>
+                            <i class="fas fa-dolly step__image"></i>
+                            <h4 class="step__title">Погрузка</h4>
                             <p class="step__text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, expedita.
                             </p>
                         </div>
                         <div class="step">
-                            <img src="img/steps/1.png" alt="" class="step__image">
-                            <h4 class="step__title">Производство</h4>
+                            <i class="fas fa-truck-moving step__image"></i>
+                            <h4 class="step__title">Транспортировка</h4>
                             <p class="step__text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, expedita.
                             </p>
                         </div>
                         <div class="step">
-                            <img src="img/steps/1.png" alt="" class="step__image">
-                            <h4 class="step__title">Монтаж</h4>
+                            <i class="fas fa-truck-loading step__image"></i>
+                            <h4 class="step__title">Разгрузка</h4>
                             <p class="step__text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, expedita.
                             </p>
@@ -435,6 +453,7 @@
                     </div>
                 </div>
             </section>
+            <!--
             <section class="section before">
                 <div class="container">
                     <h2 class="section-title section__title">До и после</h2>
@@ -470,6 +489,7 @@
                     </div>
                 </div>
             </section>
+            -->
             <section class="section reviews">
                 <div class="container">
                     <h2 class="section-title section__title">Отзывы клиентов</h2>
@@ -525,19 +545,36 @@
                     </div>
                 </div>
             </section>
-            <section class="section factory">
+            <section class="section about">
                 <div class="container">
-                    <h2 class="section-title section__title">О производстве</h2>
-                    <div class="factory-block">
-                        <div class="factory-block__image">
-                            <img src="img/factory/1.png" alt="">
+                    <h2 class="section-title section__title">О компании</h2>
+                    <div class="about-block">
+                        <div class="about-block__image">
+                            <img src="img/about/1.jpg" alt="">
                         </div>
-                        <div class="factory-block__text">
+                        <div class="about-block__text">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui architecto voluptatem in eius aliquam perferendis mollitia soluta quidem possimus consectetur aut similique vero laborum deserunt a repellat impedit, illo numquam.
+                                <strong>ООО "Автокомпас"</strong> - транспортная компания, которая ведет свою деятельность на рынке автотранспортных перевозок с 1997 года. Мы оказываем полный спектр услуг по автомобильной доставке грузов любых партий во всех направлениях.
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui architecto voluptatem in eius aliquam perferendis mollitia soluta quidem possimus consectetur aut similique vero laborum deserunt a repellat impedit, illo numquam.
+                                "Автокомпас" с 2006 года является действительным членом Сибирской Ассоциации Автомобильных Перевозчиков. Крупнейшее объединение перевозчиков за Уралом.Также наша компания осуществляет международные автомобильные перевозки с 2014 года и по сей день.
+                            </p>
+                            <p>
+                                У нас есть собственный автопарк мелкотоннажного объемного транспорта, который позволяет перевозить от 1 кг. до 10т. (1м.куб. - 60м.куб.) груза, а так же грузовые автомобили грузоподъемностью до 24т. (60м.куб. - 120м.куб.). Все автомобили нашей компании оснащены системой навигации , которая отслеживается диспетчером по грузоперевозкам. За доставку груза можно не переживать и в любой момент обратиться за интересующей Вас информацией к диспетчеру, он всегда подскажет где находится Ваш груз. У нас работают водители со стажем, которые контролируют процесс погрузки, соблюдают все правила дорожного движения, что гарантирует доставку груза в идеальном состоянии и в срок.
+                            </p>
+                            <p>
+                                Наша компания применяет классическую систему налогообложения с НДС, является добросовестным налогоплательщиком и исключает налоговые риски для своих клиентов.
+                            </p>
+                            <p>
+                                По желанию клиента возможно страхование груза, на индивидуальных условиях.
+                            </p>
+                            <p>
+                            <ul>
+                                <strong>В нашей работе, главное:</strong>
+                                <li>Гарантия сохранности грузов;</li>
+                                <li>Соблюдение сроков доставки;</li>
+                                <li>Широкая география перевозок;</li>
+                            </ul>
                             </p>
                         </div>
                     </div>
@@ -556,7 +593,7 @@
                         <div class="contacts-block__item">
                             <i class="fas fa-map-marked-alt contacts__image"></i>
                             <div class="contacts__text">
-                                <address class="contacts__address">Фабричная тра ля ля</address>
+                                <address class="contacts__address">г. Новосибирск,<br>ул. Фабричка, д. 55, офис 206</address>
                             </div>
                         </div>
                         <div class="contacts-block__item">
@@ -568,26 +605,23 @@
                     </div>
                 </div>
             </section>
-            <div class="map" id="map">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A89090f0b70c4125f48bb99429c8745a495cd5abb4cf5c6dcc789494dcbfaaccb&amp;width=100%25&amp;height=410&amp;lang=ru_UA&amp;scroll=false"></script>
-            </div>
+            <div class="map" id="map"></div>
             <section class="section questions">
                 <div class="container">
                     <div class="questions-block">
                         <h3 class="questions__title">Остались вопросы?</h3>
-                        <a href="#" class="questions__link">Задайте их менеджеру</a>
+                        <a href="#offer" class="questions__link">Задайте их менеджеру</a>
                     </div>
                 </div>
             </section>
         </main>
-        
-        <div class="footer">
+        <footer class="footer">
             <div class="container">
                 <div class="footer-block">
                     <div class="footer__description">
                         <h4 class="footer__title">Автокомпас</h4>
                         <span class="footer__subtitle">транспортная компания</span>
-                        <span class="footer__copy">© Автокомпас</span>
+                        <span class="footer__copy">&copy; ООО "Автокомпас" 2007&mdash;2019</span>
                     </div>
                     <div class="footer__pay-info">
                         <i class="fab fa-cc-visa footer__pay-logo"></i>
@@ -609,11 +643,11 @@
                         </div>
                     </div>
                     <div class="footer-adaptive">
-                        <span class="footer-adaptive__copy">© Автокомпас</span>
+                        <span class="footer-adaptive__copy">&copy; ООО "Автокомпас" 2007&mdash;2019</span>
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
         <!--<a href="#top" class="button-up">up</a>-->
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="js/jquery.event.move.js"></script>

@@ -1,6 +1,11 @@
 .step{
     position: relative;
     text-align: center;
+    &__image{
+        font-size: 46px;
+        margin-top: 10px;
+        margin-bottom: 10px; 
+    }
     &__title{
         font-size: 16px;
         @include bold;
@@ -8,13 +13,13 @@
     }
     &:before{
         content: '';
-        width: 83%;
+        width: 69%;
         height: 2px;
         background-color: rgba(#7e7b78, 0.9);
         display: block;
         position: absolute;
         top: 24%;
-        right: -55%;
+        right: -48%;
     }
     &:last-child:before{
         display: none;
@@ -26,7 +31,6 @@
         font-size: 12px;
     }
     &s{
-        background-color: $bg-secondary;
         &-block{
             display: flex;
             flex-wrap: wrap;
@@ -35,14 +39,6 @@
     }
 }
 @media (max-width: 1199px){
-    .step{
-        &:before{
-            width: 56%;
-            right: -28%;
-        }
-    }
-}
-@media (max-width: 991px){
     .step{
         width: 33%;
         &:before{

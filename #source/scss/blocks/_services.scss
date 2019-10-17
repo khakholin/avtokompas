@@ -1,5 +1,4 @@
-.catalog{
-    background-color: $bg-secondary;
+.services{
     &-block{
         display: flex;
         justify-content: space-between;
@@ -14,7 +13,7 @@
         box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
         overflow-y: hidden;
         &:hover{
-            .catalog-card__buttons{
+            .services-card__buttons{
                 transform: translateY(0);
                 opacity: 1;
             }
@@ -62,7 +61,7 @@
     }
 }
 @media (max-width: 1199px){
-    .catalog{
+    .services{
         &-block{
             justify-content: center;
         }
@@ -75,14 +74,14 @@
     }
 }
 @media (max-width: 499px){
-    .catalog{
+    .services{
         &__card{
             padding-bottom: 30px;
         }
     }
 }
 @media (max-width: 399px){
-    .catalog{
+    .services{
         &__card{
             padding-bottom: 50px;
         }

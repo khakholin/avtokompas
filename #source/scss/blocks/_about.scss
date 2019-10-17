@@ -1,11 +1,12 @@
-.factory{
+.about{
     &-block{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: flex-end;
         &__text{
             flex-basis: 50%;
-            margin-left: 70px;
+            margin-left: 35px;
             font-size: 20px;
             display: flex;
             justify-content: center;
@@ -14,11 +15,25 @@
                 margin-bottom: 20px;
                 text-align: justify;
             }
+            li{
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                &:before{
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: $text-color;
+                    margin-right: 5px;
+                    margin-left: 10px;
+                }
+            }
         }
     }
 }
 @media (max-width: 991px){
-    .factory{
+    .about{
         &-block{
             flex-direction: column;
             justify-content: center;

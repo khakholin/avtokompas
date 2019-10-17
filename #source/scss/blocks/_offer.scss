@@ -1,7 +1,6 @@
 .offer{
     padding: 129px 0;
     &-block{
-        
         padding: 80px;
         box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
         &_calc-bg{
@@ -122,7 +121,7 @@
             flex-basis: 100%;
             width: 100%;
         }
-        &__input{
+        &__input, &__select{
             margin-bottom: 20px;
             border-right-width: 1px;
         }

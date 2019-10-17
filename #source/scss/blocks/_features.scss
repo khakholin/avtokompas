@@ -1,13 +1,18 @@
 .features{
+    background-color: $bg-secondary;
     &-block{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-    
         &__item{
             flex-basis: 33.33%; 
             text-align: center;
             margin-bottom: 100px;
+        }
+        &__image{
+            font-size: 46px; 
+            margin-top: 10px;
+            margin-bottom: 10px; 
         }
     }
 }
