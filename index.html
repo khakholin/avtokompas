@@ -9,7 +9,7 @@
         <script src="https://kit.fontawesome.com/6010edd914.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="header" name="top">
+        <div class="header" name="top">
             <div class="menu">
                     <div class="container">
                         <nav class="menu__nav">
@@ -24,9 +24,9 @@
             <div class="navbar">
                 <div class="container">
                     <div class="navbar-wrap">
-                        <button class="menu-button navbar__menu-button">
+                        <div class="menu-button navbar__menu-button">
                             <div class="menu-button__lines"></div>
-                        </button>
+                        </div>
                         <div class="logo navbar__logo">
                             <strong class="logo__text">
                                 <span class="red">Авто</span><span class="blue">компас</span>
@@ -34,7 +34,7 @@
                             <span class="logo__description">транспортная компания</span>
                         </div>
                         <div class="navbar__mobile">
-                            <span href="tel:+79991234567" class="navbar__phone">+7 (999) 123-45-67</span>
+                            <a href="tel:+79991234567" class="navbar__phone">+7 (999) 123-45-67</a>
                             <span class="navbar__work-time navbar__small-text">пн-пт с 9 до 18</span>
                         </div>
                         <div class="navbar__landline">
@@ -57,7 +57,7 @@
                 </div>
             </div>
             <!-- /.hero -->
-        </header>
+        </div>
         <!-- /.header -->
         <main>
             <section class="offer" id="offer">
@@ -70,7 +70,7 @@
                         <form action="#" class="form offer__form">
                             <div class="form__row">
                                 <div class="form__group">
-                                    <label for="" class="form__label">Вид груза</label>
+                                    <label for="cargo-type" class="form__label">Вид груза</label>
                                     <input type="hidden" class="type" id="select-type" value="Стандартный">
                                     <div class="select form__select">
                                         <div class="select_checked">Стандартный</div>
@@ -81,11 +81,11 @@
                                     </div>
                                 </div>
                                 <div class="form__group">
-                                    <label for="" class="form__label">Ширина, см</label>
+                                    <label for="cargo-width" class="form__label">Ширина, см</label>
                                     <input type="number" class="input form__input">
                                 </div>
                                 <div class="form__group">
-                                    <label for="" class="form__label">Высота, см</label>
+                                    <label for="cargo-height" class="form__label">Высота, см</label>
                                     <input type="number" class="input form__input border-right-width">
                                 </div>
                             </div>
@@ -569,12 +569,12 @@
                                 По желанию клиента возможно страхование груза, на индивидуальных условиях.
                             </p>
                             <p>
-                            <ul>
                                 <strong>В нашей работе, главное:</strong>
-                                <li>Гарантия сохранности грузов;</li>
-                                <li>Соблюдение сроков доставки;</li>
-                                <li>Широкая география перевозок;</li>
-                            </ul>
+                                <ul>
+                                    <li>Гарантия сохранности грузов;</li>
+                                    <li>Соблюдение сроков доставки;</li>
+                                    <li>Широкая география перевозок;</li>
+                                </ul>
                             </p>
                         </div>
                     </div>
@@ -615,7 +615,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <div class="footer">
             <div class="container">
                 <div class="footer-block">
                     <div class="footer__description">
@@ -647,7 +647,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
         <!--<a href="#top" class="button-up">up</a>-->
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="js/jquery.event.move.js"></script>
